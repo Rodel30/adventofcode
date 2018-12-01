@@ -5,3 +5,9 @@ def main
 end
 
 puts main
+
+def better
+  File.readlines('i.txt').map(&:to_i).reduce(&:+)
+end
+
+puts better
